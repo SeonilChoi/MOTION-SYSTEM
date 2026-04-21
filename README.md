@@ -83,21 +83,6 @@ motion_system/                 # colcon workspace root
 
 ---
 
-## Further reading
-
-
-| Path                                                                               | Contents                  |
-| ---------------------------------------------------------------------------------- | ------------------------- |
-| [common/common_robot_interface/README.md](common/common_robot_interface/README.md) | Python shared robot types |
-| [common/common_motor_interface/README.md](common/common_motor_interface/README.md) | C++ `motor_frame_t`       |
-| [lib/robot_manager/README.md](lib/robot_manager/README.md)                         | Robot manager stack index |
-| [lib/motor_manager/README.md](lib/motor_manager/README.md)                         | Motor runtime stack index |
-| [ros2/motion_system_msgs/README.md](ros2/motion_system_msgs/README.md)             | `MotorStatus` message     |
-| [ros2/motion_system_pkg/README.md](ros2/motion_system_pkg/README.md)               | Nodes, launches, scripts  |
-
-
----
-
 ## License
 
 Per-package licenses are given in each `package.xml` and any `LICENSE` files (for example MIT for `motion_system_msgs` / `motion_system_pkg`, Apache-2.0 for `utils_pkg`).
