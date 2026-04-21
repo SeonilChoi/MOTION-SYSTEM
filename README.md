@@ -1,8 +1,8 @@
 # Motion System
 
-ROS 2 workspace for robot motion: a **real-time motor stack** (EtherCAT with MINAS / ZeroErr drivers, and related plumbing) and a **Python robot / scheduler / kinematics** layer. The `motion_system_pkg` nodes connect joystick and high-level robot state to the low-level `MotorManager`.
+## Overview
 
-Use this repository directory as the **colcon workspace root**; `colcon` discovers packages recursively via `package.xml` files under `common/`, `lib/`, and `ros2/`.
+ROS 2 **colcon** workspace for motion: **EtherCAT** motor stack (MotorManager, MINAS / ZeroErr) and a **Python** robot layer (scheduler, kinematics, RobotManager), bridged by motion_system_pkg. Build from this repo root; packages are under common/, lib/, and ros2/.
 
 ---
 
