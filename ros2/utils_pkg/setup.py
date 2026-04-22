@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'sine_motor_command_publisher = utils_pkg.sine_motor_command_publisher:main',
+            'rocking_chair_position_command = utils_pkg.rocking_chair_position_command:main',
         ],
     },
 )
