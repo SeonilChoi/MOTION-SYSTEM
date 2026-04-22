@@ -15,6 +15,7 @@ FINAL_POSITION = 1.5
 
 CW_NEW_SET_POINT_ZEROERR = 0x103F
 
+
 def _motor_command_qos() -> QoSProfile:
     return QoSProfile(
         depth=1,
@@ -61,7 +62,7 @@ class RockingChairPositionCommand(Node):
     def _compute_position(self, t: float) -> float:
         amplitude = (self._final_position - self._start_position) / 2.0
         offset = self._start_position + amplitude
-        
+
         return amplitude * (-math.cos(2.0 * math.pi * self._freq * t)) + offset
 
 
