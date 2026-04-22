@@ -59,9 +59,9 @@ class RockingChairPositionCommand(Node):
         self._t += self._dt
 
     def _compute_position(self, t: float) -> float:
-        offset = self._start_position
-        amplitude = self._final_position - self._start_position
-
+        amplitude = (self._final_position - self._start_position) / 2.0
+        offset = self._start_position + amplitude
+        
         return amplitude * (-math.cos(2.0 * math.pi * self._freq * t)) + offset
 
 
