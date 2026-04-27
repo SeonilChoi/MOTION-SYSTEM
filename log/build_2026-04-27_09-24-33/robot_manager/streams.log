@@ -1,0 +1,35 @@
+[0.413s] Invoking command in '/home/csi/motion_system/lib/robot_manager/robot_manager': AMENT_PREFIX_PATH=/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:${AMENT_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/robot_manager/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/robot_manager build --build-base /home/csi/motion_system/build/robot_manager/build install --record /home/csi/motion_system/build/robot_manager/install.log --single-version-externally-managed install_data
+[0.542s] running egg_info
+[0.542s] creating ../../../build/robot_manager/robot_manager.egg-info
+[0.550s] writing ../../../build/robot_manager/robot_manager.egg-info/PKG-INFO
+[0.551s] writing dependency_links to ../../../build/robot_manager/robot_manager.egg-info/dependency_links.txt
+[0.551s] writing requirements to ../../../build/robot_manager/robot_manager.egg-info/requires.txt
+[0.551s] writing top-level names to ../../../build/robot_manager/robot_manager.egg-info/top_level.txt
+[0.551s] writing manifest file '../../../build/robot_manager/robot_manager.egg-info/SOURCES.txt'
+[0.568s] reading manifest file '../../../build/robot_manager/robot_manager.egg-info/SOURCES.txt'
+[0.568s] writing manifest file '../../../build/robot_manager/robot_manager.egg-info/SOURCES.txt'
+[0.568s] running build
+[0.568s] running build_py
+[0.568s] creating /home/csi/motion_system/build/robot_manager/build
+[0.569s] creating /home/csi/motion_system/build/robot_manager/build/lib
+[0.569s] creating /home/csi/motion_system/build/robot_manager/build/lib/robot_manager
+[0.569s] copying src/robot_manager/__init__.py -> /home/csi/motion_system/build/robot_manager/build/lib/robot_manager
+[0.569s] copying src/robot_manager/robot_manager.py -> /home/csi/motion_system/build/robot_manager/build/lib/robot_manager
+[0.569s] running install
+[0.571s] running install_lib
+[0.580s] creating /home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages/robot_manager
+[0.580s] copying /home/csi/motion_system/build/robot_manager/build/lib/robot_manager/__init__.py -> /home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages/robot_manager
+[0.580s] copying /home/csi/motion_system/build/robot_manager/build/lib/robot_manager/robot_manager.py -> /home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages/robot_manager
+[0.580s] byte-compiling /home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages/robot_manager/__init__.py to __init__.cpython-312.pyc
+[0.580s] byte-compiling /home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages/robot_manager/robot_manager.py to robot_manager.cpython-312.pyc
+[0.581s] running install_data
+[0.581s] creating /home/csi/motion_system/install/robot_manager/share/ament_index
+[0.581s] creating /home/csi/motion_system/install/robot_manager/share/ament_index/resource_index
+[0.581s] creating /home/csi/motion_system/install/robot_manager/share/ament_index/resource_index/packages
+[0.581s] copying resource/robot_manager -> /home/csi/motion_system/install/robot_manager/share/ament_index/resource_index/packages
+[0.581s] copying package.xml -> /home/csi/motion_system/install/robot_manager/share/robot_manager
+[0.581s] running install_egg_info
+[0.590s] Copying ../../../build/robot_manager/robot_manager.egg-info to /home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages/robot_manager-0.0.0-py3.12.egg-info
+[0.590s] running install_scripts
+[0.646s] writing list of installed files to '/home/csi/motion_system/build/robot_manager/install.log'
+[0.659s] Invoked command in '/home/csi/motion_system/lib/robot_manager/robot_manager' returned '0': AMENT_PREFIX_PATH=/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:${AMENT_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/robot_manager/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/robot_manager build --build-base /home/csi/motion_system/build/robot_manager/build install --record /home/csi/motion_system/build/robot_manager/install.log --single-version-externally-managed install_data

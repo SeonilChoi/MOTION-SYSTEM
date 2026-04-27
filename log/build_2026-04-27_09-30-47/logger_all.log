@@ -1,0 +1,883 @@
+[0.045s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.045s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7d2ec6ca2750>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d2ec6ca2540>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d2ec6ca2540>>)
+[0.061s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.061s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.061s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.061s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.061s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.061s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.061s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/csi/motion_system'
+[0.061s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.061s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.061s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common) by extensions ['ignore', 'ignore_ament_install']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common) by extension 'ignore'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common) by extension 'ignore_ament_install'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common) by extensions ['colcon_pkg']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common) by extension 'colcon_pkg'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common) by extensions ['colcon_meta']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common) by extension 'colcon_meta'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common) by extensions ['ros']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common) by extension 'ros'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common) by extensions ['cmake', 'python']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common) by extension 'cmake'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common) by extension 'python'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common) by extensions ['python_setup_py']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common) by extension 'python_setup_py'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_motor_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_motor_interface) by extension 'ignore'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_motor_interface) by extension 'ignore_ament_install'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_motor_interface) by extensions ['colcon_pkg']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_motor_interface) by extension 'colcon_pkg'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_motor_interface) by extensions ['colcon_meta']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_motor_interface) by extension 'colcon_meta'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_motor_interface) by extensions ['ros']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_motor_interface) by extension 'ros'
+[0.074s] DEBUG:colcon.colcon_core.package_identification:Package 'common/common_motor_interface' with type 'ros.ament_cmake' and name 'common_motor_interface'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_robot_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_robot_interface) by extension 'ignore'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_robot_interface) by extension 'ignore_ament_install'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_robot_interface) by extensions ['colcon_pkg']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_robot_interface) by extension 'colcon_pkg'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_robot_interface) by extensions ['colcon_meta']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_robot_interface) by extension 'colcon_meta'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_robot_interface) by extensions ['ros']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(common/common_robot_interface) by extension 'ros'
+[0.075s] DEBUG:colcon.colcon_core.package_identification:Package 'common/common_robot_interface' with type 'ros.ament_python' and name 'common_robot_interface'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib) by extensions ['ignore', 'ignore_ament_install']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib) by extension 'ignore'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib) by extension 'ignore_ament_install'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib) by extensions ['colcon_pkg']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib) by extension 'colcon_pkg'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib) by extensions ['colcon_meta']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib) by extension 'colcon_meta'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib) by extensions ['ros']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib) by extension 'ros'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib) by extensions ['cmake', 'python']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib) by extension 'cmake'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib) by extension 'python'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib) by extensions ['python_setup_py']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib) by extension 'python_setup_py'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/motor_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/motor_manager) by extension 'ignore'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/motor_manager) by extension 'ignore_ament_install'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/motor_manager) by extensions ['colcon_pkg']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/motor_manager) by extension 'colcon_pkg'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/motor_manager) by extensions ['colcon_meta']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/motor_manager) by extension 'colcon_meta'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/motor_manager) by extensions ['ros']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/motor_manager) by extension 'ros'
+[0.075s] DEBUG:colcon.colcon_core.package_identification:Package 'lib/motor_manager' with type 'ros.ament_cmake' and name 'motor_manager'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager) by extension 'ignore'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager) by extension 'ignore_ament_install'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager) by extensions ['colcon_pkg']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager) by extension 'colcon_pkg'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager) by extensions ['colcon_meta']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager) by extension 'colcon_meta'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager) by extensions ['ros']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager) by extension 'ros'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager) by extensions ['cmake', 'python']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager) by extension 'cmake'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager) by extension 'python'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager) by extensions ['python_setup_py']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager) by extension 'python_setup_py'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core) by extensions ['ignore', 'ignore_ament_install']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core) by extension 'ignore'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core) by extension 'ignore_ament_install'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core) by extensions ['colcon_pkg']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core) by extension 'colcon_pkg'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core) by extensions ['colcon_meta']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core) by extension 'colcon_meta'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core) by extensions ['ros']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core) by extension 'ros'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core) by extensions ['cmake', 'python']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core) by extension 'cmake'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core) by extension 'python'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core) by extensions ['python_setup_py']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core) by extension 'python_setup_py'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core/robot_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core/robot_interface) by extension 'ignore'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core/robot_interface) by extension 'ignore_ament_install'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core/robot_interface) by extensions ['colcon_pkg']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core/robot_interface) by extension 'colcon_pkg'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core/robot_interface) by extensions ['colcon_meta']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core/robot_interface) by extension 'colcon_meta'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core/robot_interface) by extensions ['ros']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/core/robot_interface) by extension 'ros'
+[0.076s] DEBUG:colcon.colcon_core.package_identification:Package 'lib/robot_manager/core/robot_interface' with type 'ros.ament_python' and name 'robot_interface'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/kinematics) by extensions ['ignore', 'ignore_ament_install']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/kinematics) by extension 'ignore'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/kinematics) by extension 'ignore_ament_install'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/kinematics) by extensions ['colcon_pkg']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/kinematics) by extension 'colcon_pkg'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/kinematics) by extensions ['colcon_meta']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/kinematics) by extension 'colcon_meta'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/kinematics) by extensions ['ros']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/kinematics) by extension 'ros'
+[0.076s] DEBUG:colcon.colcon_core.package_identification:Package 'lib/robot_manager/kinematics' with type 'ros.ament_python' and name 'kinematics'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/planner) by extensions ['ignore', 'ignore_ament_install']
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/planner) by extension 'ignore'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/planner) by extension 'ignore_ament_install'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/planner) by extensions ['colcon_pkg']
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/planner) by extension 'colcon_pkg'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/planner) by extensions ['colcon_meta']
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/planner) by extension 'colcon_meta'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/planner) by extensions ['ros']
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/planner) by extension 'ros'
+[0.077s] DEBUG:colcon.colcon_core.package_identification:Package 'lib/robot_manager/planner' with type 'ros.ament_python' and name 'planner'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robot_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robot_manager) by extension 'ignore'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robot_manager) by extension 'ignore_ament_install'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robot_manager) by extensions ['colcon_pkg']
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robot_manager) by extension 'colcon_pkg'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robot_manager) by extensions ['colcon_meta']
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robot_manager) by extension 'colcon_meta'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robot_manager) by extensions ['ros']
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robot_manager) by extension 'ros'
+[0.077s] DEBUG:colcon.colcon_core.package_identification:Package 'lib/robot_manager/robot_manager' with type 'ros.ament_python' and name 'robot_manager'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robots) by extensions ['ignore', 'ignore_ament_install']
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robots) by extension 'ignore'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robots) by extension 'ignore_ament_install'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robots) by extensions ['colcon_pkg']
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robots) by extension 'colcon_pkg'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robots) by extensions ['colcon_meta']
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robots) by extension 'colcon_meta'
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robots) by extensions ['ros']
+[0.077s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/robots) by extension 'ros'
+[0.078s] DEBUG:colcon.colcon_core.package_identification:Package 'lib/robot_manager/robots' with type 'ros.ament_python' and name 'robots'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/scheduler) by extensions ['ignore', 'ignore_ament_install']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/scheduler) by extension 'ignore'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/scheduler) by extension 'ignore_ament_install'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/scheduler) by extensions ['colcon_pkg']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/scheduler) by extension 'colcon_pkg'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/scheduler) by extensions ['colcon_meta']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/scheduler) by extension 'colcon_meta'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/scheduler) by extensions ['ros']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(lib/robot_manager/scheduler) by extension 'ros'
+[0.078s] DEBUG:colcon.colcon_core.package_identification:Package 'lib/robot_manager/scheduler' with type 'ros.ament_python' and name 'scheduler'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2) by extension 'ignore'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2) by extension 'ignore_ament_install'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2) by extensions ['colcon_pkg']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2) by extension 'colcon_pkg'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2) by extensions ['colcon_meta']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2) by extension 'colcon_meta'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2) by extensions ['ros']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2) by extension 'ros'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2) by extensions ['cmake', 'python']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2) by extension 'cmake'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2) by extension 'python'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2) by extensions ['python_setup_py']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2) by extension 'python_setup_py'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_msgs) by extension 'ignore'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_msgs) by extension 'ignore_ament_install'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_msgs) by extensions ['colcon_pkg']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_msgs) by extension 'colcon_pkg'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_msgs) by extensions ['colcon_meta']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_msgs) by extension 'colcon_meta'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_msgs) by extensions ['ros']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_msgs) by extension 'ros'
+[0.079s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2/motion_system_msgs' with type 'ros.ament_cmake' and name 'motion_system_msgs'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_pkg) by extension 'ignore'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_pkg) by extension 'ignore_ament_install'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_pkg) by extensions ['colcon_pkg']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_pkg) by extension 'colcon_pkg'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_pkg) by extensions ['colcon_meta']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_pkg) by extension 'colcon_meta'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_pkg) by extensions ['ros']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_pkg) by extension 'ros'
+[0.079s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2/motion_system_pkg' with type 'ros.ament_cmake' and name 'motion_system_pkg'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_rqt) by extensions ['ignore', 'ignore_ament_install']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_rqt) by extension 'ignore'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_rqt) by extension 'ignore_ament_install'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_rqt) by extensions ['colcon_pkg']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_rqt) by extension 'colcon_pkg'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_rqt) by extensions ['colcon_meta']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_rqt) by extension 'colcon_meta'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_rqt) by extensions ['ros']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/motion_system_rqt) by extension 'ros'
+[0.079s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2/motion_system_rqt' with type 'ros.ament_cmake' and name 'motion_system_rqt'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/utils_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/utils_pkg) by extension 'ignore'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/utils_pkg) by extension 'ignore_ament_install'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/utils_pkg) by extensions ['colcon_pkg']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/utils_pkg) by extension 'colcon_pkg'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/utils_pkg) by extensions ['colcon_meta']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/utils_pkg) by extension 'colcon_meta'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/utils_pkg) by extensions ['ros']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(ros2/utils_pkg) by extension 'ros'
+[0.080s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2/utils_pkg' with type 'ros.ament_python' and name 'utils_pkg'
+[0.080s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.080s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.080s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.080s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.080s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.088s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.088s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.089s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 13 installed packages in /home/csi/motion_system/install
+[0.090s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 286 installed packages in /opt/ros/jazzy
+[0.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_motor_interface' build argument 'cmake_args' from command line to 'None'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_motor_interface' build argument 'cmake_target' from command line to 'None'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_motor_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_motor_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_motor_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_motor_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_motor_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_motor_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_motor_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.105s] DEBUG:colcon.colcon_core.verb:Building package 'common_motor_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/csi/motion_system/build/common_motor_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/csi/motion_system/install/common_motor_interface', 'merge_install': False, 'path': '/home/csi/motion_system/common/common_motor_interface', 'symlink_install': False, 'test_result_base': None}
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_robot_interface' build argument 'cmake_args' from command line to 'None'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_robot_interface' build argument 'cmake_target' from command line to 'None'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_robot_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_robot_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_robot_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_robot_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_robot_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_robot_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.105s] Level 5:colcon.colcon_core.verb:set package 'common_robot_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.106s] DEBUG:colcon.colcon_core.verb:Building package 'common_robot_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/csi/motion_system/build/common_robot_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/csi/motion_system/install/common_robot_interface', 'merge_install': False, 'path': '/home/csi/motion_system/common/common_robot_interface', 'symlink_install': False, 'test_result_base': None}
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_msgs' build argument 'cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_msgs' build argument 'cmake_target' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.106s] DEBUG:colcon.colcon_core.verb:Building package 'motion_system_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/csi/motion_system/build/motion_system_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/csi/motion_system/install/motion_system_msgs', 'merge_install': False, 'path': '/home/csi/motion_system/ros2/motion_system_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_rqt' build argument 'cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_rqt' build argument 'cmake_target' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_rqt' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_rqt' build argument 'cmake_clean_cache' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_rqt' build argument 'cmake_clean_first' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_rqt' build argument 'cmake_force_configure' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_rqt' build argument 'ament_cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_rqt' build argument 'catkin_cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motion_system_rqt' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.106s] DEBUG:colcon.colcon_core.verb:Building package 'motion_system_rqt' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/csi/motion_system/build/motion_system_rqt', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/csi/motion_system/install/motion_system_rqt', 'merge_install': False, 'path': '/home/csi/motion_system/ros2/motion_system_rqt', 'symlink_install': False, 'test_result_base': None}
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motor_manager' build argument 'cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motor_manager' build argument 'cmake_target' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motor_manager' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motor_manager' build argument 'cmake_clean_cache' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motor_manager' build argument 'cmake_clean_first' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motor_manager' build argument 'cmake_force_configure' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motor_manager' build argument 'ament_cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motor_manager' build argument 'catkin_cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'motor_manager' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.106s] DEBUG:colcon.colcon_core.verb:Building package 'motor_manager' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/csi/motion_system/build/motor_manager', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/csi/motion_system/install/motor_manager', 'merge_install': False, 'path': '/home/csi/motion_system/lib/motor_manager', 'symlink_install': False, 'test_result_base': None}
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'robot_interface' build argument 'cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'robot_interface' build argument 'cmake_target' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'robot_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'robot_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'robot_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'robot_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'robot_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'robot_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'robot_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.106s] DEBUG:colcon.colcon_core.verb:Building package 'robot_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/csi/motion_system/build/robot_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/csi/motion_system/install/robot_interface', 'merge_install': False, 'path': '/home/csi/motion_system/lib/robot_manager/core/robot_interface', 'symlink_install': False, 'test_result_base': None}
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'utils_pkg' build argument 'cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'utils_pkg' build argument 'cmake_target' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'utils_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'utils_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'utils_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'utils_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'utils_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'utils_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'utils_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.106s] DEBUG:colcon.colcon_core.verb:Building package 'utils_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/csi/motion_system/build/utils_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/csi/motion_system/install/utils_pkg', 'merge_install': False, 'path': '/home/csi/motion_system/ros2/utils_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'cmake_target' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'cmake_clean_first' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'cmake_force_configure' from command line to 'False'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'ament_cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.106s] DEBUG:colcon.colcon_core.verb:Building package 'kinematics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/csi/motion_system/build/kinematics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/csi/motion_system/install/kinematics', 'merge_install': False, 'path': '/home/csi/motion_system/lib/robot_manager/kinematics', 'symlink_install': False, 'test_result_base': None}
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'cmake_args' from command line to 'None'
+[0.106s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'cmake_target' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.107s] DEBUG:colcon.colcon_core.verb:Building package 'planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/csi/motion_system/build/planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/csi/motion_system/install/planner', 'merge_install': False, 'path': '/home/csi/motion_system/lib/robot_manager/planner', 'symlink_install': False, 'test_result_base': None}
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'scheduler' build argument 'cmake_args' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'scheduler' build argument 'cmake_target' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'scheduler' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'scheduler' build argument 'cmake_clean_cache' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'scheduler' build argument 'cmake_clean_first' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'scheduler' build argument 'cmake_force_configure' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'scheduler' build argument 'ament_cmake_args' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'scheduler' build argument 'catkin_cmake_args' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'scheduler' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.107s] DEBUG:colcon.colcon_core.verb:Building package 'scheduler' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/csi/motion_system/build/scheduler', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/csi/motion_system/install/scheduler', 'merge_install': False, 'path': '/home/csi/motion_system/lib/robot_manager/scheduler', 'symlink_install': False, 'test_result_base': None}
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robots' build argument 'cmake_args' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robots' build argument 'cmake_target' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robots' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robots' build argument 'cmake_clean_cache' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robots' build argument 'cmake_clean_first' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robots' build argument 'cmake_force_configure' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robots' build argument 'ament_cmake_args' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robots' build argument 'catkin_cmake_args' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robots' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.107s] DEBUG:colcon.colcon_core.verb:Building package 'robots' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/csi/motion_system/build/robots', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/csi/motion_system/install/robots', 'merge_install': False, 'path': '/home/csi/motion_system/lib/robot_manager/robots', 'symlink_install': False, 'test_result_base': None}
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robot_manager' build argument 'cmake_args' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robot_manager' build argument 'cmake_target' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robot_manager' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robot_manager' build argument 'cmake_clean_cache' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robot_manager' build argument 'cmake_clean_first' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robot_manager' build argument 'cmake_force_configure' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robot_manager' build argument 'ament_cmake_args' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robot_manager' build argument 'catkin_cmake_args' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'robot_manager' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.107s] DEBUG:colcon.colcon_core.verb:Building package 'robot_manager' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/csi/motion_system/build/robot_manager', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/csi/motion_system/install/robot_manager', 'merge_install': False, 'path': '/home/csi/motion_system/lib/robot_manager/robot_manager', 'symlink_install': False, 'test_result_base': None}
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'motion_system_pkg' build argument 'cmake_args' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'motion_system_pkg' build argument 'cmake_target' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'motion_system_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'motion_system_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'motion_system_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'motion_system_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'motion_system_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'motion_system_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.107s] Level 5:colcon.colcon_core.verb:set package 'motion_system_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.107s] DEBUG:colcon.colcon_core.verb:Building package 'motion_system_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/csi/motion_system/build/motion_system_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/csi/motion_system/install/motion_system_pkg', 'merge_install': False, 'path': '/home/csi/motion_system/ros2/motion_system_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.107s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.109s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.109s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/csi/motion_system/common/common_robot_interface' with build type 'ament_python'
+[0.109s] Level 1:colcon.colcon_core.shell:create_environment_hook('common_robot_interface', 'ament_prefix_path')
+[0.112s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/common_robot_interface/share/common_robot_interface/hook/ament_prefix_path.ps1'
+[0.112s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/common_robot_interface/share/common_robot_interface/hook/ament_prefix_path.dsv'
+[0.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/common_robot_interface/share/common_robot_interface/hook/ament_prefix_path.sh'
+[0.113s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.113s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.115s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/csi/motion_system/common/common_motor_interface' with build type 'ament_cmake'
+[0.115s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/csi/motion_system/common/common_motor_interface'
+[0.115s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.115s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.117s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/csi/motion_system/ros2/motion_system_msgs' with build type 'ament_cmake'
+[0.117s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/csi/motion_system/ros2/motion_system_msgs'
+[0.117s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.117s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.118s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/csi/motion_system/ros2/motion_system_rqt' with build type 'ament_cmake'
+[0.118s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/csi/motion_system/ros2/motion_system_rqt'
+[0.118s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.118s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.224s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/csi/motion_system/common/common_robot_interface'
+[0.224s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.224s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/build/common_motor_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csi/motion_system/build/common_motor_interface -- -j24 -l24
+[0.232s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/build/motion_system_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csi/motion_system/build/motion_system_msgs -- -j24 -l24
+[0.235s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/build/motion_system_rqt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csi/motion_system/build/motion_system_rqt -- -j24 -l24
+[0.251s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/build/common_motor_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csi/motion_system/build/common_motor_interface -- -j24 -l24
+[0.256s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/build/common_motor_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/csi/motion_system/build/common_motor_interface
+[0.261s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(common_motor_interface)
+[0.262s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/build/common_motor_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/csi/motion_system/build/common_motor_interface
+[0.263s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_motor_interface' for CMake module files
+[0.263s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_motor_interface' for CMake config files
+[0.263s] Level 1:colcon.colcon_core.shell:create_environment_hook('common_motor_interface', 'cmake_prefix_path')
+[0.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/hook/cmake_prefix_path.ps1'
+[0.264s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/hook/cmake_prefix_path.dsv'
+[0.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/hook/cmake_prefix_path.sh'
+[0.264s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_motor_interface/bin'
+[0.264s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_motor_interface/lib/pkgconfig/common_motor_interface.pc'
+[0.264s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_motor_interface/lib/python3.12/site-packages'
+[0.265s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_motor_interface/bin'
+[0.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/package.ps1'
+[0.265s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/package.dsv'
+[0.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/package.sh'
+[0.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/package.bash'
+[0.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/package.zsh'
+[0.266s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/common_motor_interface/share/colcon-core/packages/common_motor_interface)
+[0.267s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(common_motor_interface)
+[0.267s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_motor_interface' for CMake module files
+[0.267s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_motor_interface' for CMake config files
+[0.267s] Level 1:colcon.colcon_core.shell:create_environment_hook('common_motor_interface', 'cmake_prefix_path')
+[0.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/hook/cmake_prefix_path.ps1'
+[0.267s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/hook/cmake_prefix_path.dsv'
+[0.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/hook/cmake_prefix_path.sh'
+[0.268s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_motor_interface/bin'
+[0.268s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_motor_interface/lib/pkgconfig/common_motor_interface.pc'
+[0.268s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_motor_interface/lib/python3.12/site-packages'
+[0.268s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_motor_interface/bin'
+[0.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/package.ps1'
+[0.268s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/package.dsv'
+[0.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/package.sh'
+[0.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/package.bash'
+[0.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/package.zsh'
+[0.269s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/common_motor_interface/share/colcon-core/packages/common_motor_interface)
+[0.269s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/csi/motion_system/lib/motor_manager' with build type 'ament_cmake'
+[0.269s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/csi/motion_system/lib/motor_manager'
+[0.269s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.269s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/build/motor_manager': CMAKE_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csi/motion_system/build/motor_manager -- -j24 -l24
+[0.319s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/build/motor_manager' returned '0': CMAKE_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csi/motion_system/build/motor_manager -- -j24 -l24
+[0.320s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/build/motor_manager': CMAKE_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/csi/motion_system/build/motor_manager
+[0.326s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_manager)
+[0.326s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motor_manager' for CMake module files
+[0.326s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/build/motor_manager' returned '0': CMAKE_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/csi/motion_system/build/motor_manager
+[0.326s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motor_manager' for CMake config files
+[0.326s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_manager', 'cmake_prefix_path')
+[0.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motor_manager/share/motor_manager/hook/cmake_prefix_path.ps1'
+[0.327s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motor_manager/share/motor_manager/hook/cmake_prefix_path.dsv'
+[0.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motor_manager/share/motor_manager/hook/cmake_prefix_path.sh'
+[0.327s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motor_manager/lib'
+[0.327s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_manager', 'ld_library_path_lib')
+[0.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motor_manager/share/motor_manager/hook/ld_library_path_lib.ps1'
+[0.328s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motor_manager/share/motor_manager/hook/ld_library_path_lib.dsv'
+[0.328s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motor_manager/share/motor_manager/hook/ld_library_path_lib.sh'
+[0.328s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motor_manager/bin'
+[0.328s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motor_manager/lib/pkgconfig/motor_manager.pc'
+[0.328s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motor_manager/lib/python3.12/site-packages'
+[0.328s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motor_manager/bin'
+[0.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motor_manager/share/motor_manager/package.ps1'
+[0.329s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/motor_manager/share/motor_manager/package.dsv'
+[0.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motor_manager/share/motor_manager/package.sh'
+[0.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motor_manager/share/motor_manager/package.bash'
+[0.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motor_manager/share/motor_manager/package.zsh'
+[0.329s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/motor_manager/share/colcon-core/packages/motor_manager)
+[0.330s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_manager)
+[0.330s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motor_manager' for CMake module files
+[0.330s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motor_manager' for CMake config files
+[0.330s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_manager', 'cmake_prefix_path')
+[0.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motor_manager/share/motor_manager/hook/cmake_prefix_path.ps1'
+[0.330s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motor_manager/share/motor_manager/hook/cmake_prefix_path.dsv'
+[0.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motor_manager/share/motor_manager/hook/cmake_prefix_path.sh'
+[0.331s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motor_manager/lib'
+[0.331s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_manager', 'ld_library_path_lib')
+[0.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motor_manager/share/motor_manager/hook/ld_library_path_lib.ps1'
+[0.331s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motor_manager/share/motor_manager/hook/ld_library_path_lib.dsv'
+[0.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motor_manager/share/motor_manager/hook/ld_library_path_lib.sh'
+[0.331s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motor_manager/bin'
+[0.331s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motor_manager/lib/pkgconfig/motor_manager.pc'
+[0.331s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motor_manager/lib/python3.12/site-packages'
+[0.331s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motor_manager/bin'
+[0.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motor_manager/share/motor_manager/package.ps1'
+[0.332s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/motor_manager/share/motor_manager/package.dsv'
+[0.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motor_manager/share/motor_manager/package.sh'
+[0.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motor_manager/share/motor_manager/package.bash'
+[0.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motor_manager/share/motor_manager/package.zsh'
+[0.333s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/motor_manager/share/colcon-core/packages/motor_manager)
+[0.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/build/motion_system_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csi/motion_system/build/motion_system_msgs -- -j24 -l24
+[0.437s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/build/motion_system_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/csi/motion_system/build/motion_system_msgs
+[0.438s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/build/motion_system_rqt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csi/motion_system/build/motion_system_rqt -- -j24 -l24
+[0.438s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/build/motion_system_rqt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/csi/motion_system/build/motion_system_rqt
+[0.471s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motion_system_msgs)
+[0.471s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_msgs' for CMake module files
+[0.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/build/motion_system_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/csi/motion_system/build/motion_system_msgs
+[0.473s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_msgs' for CMake config files
+[0.473s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_system_msgs', 'cmake_prefix_path')
+[0.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/cmake_prefix_path.ps1'
+[0.473s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/cmake_prefix_path.dsv'
+[0.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/cmake_prefix_path.sh'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_msgs/lib'
+[0.474s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_system_msgs', 'ld_library_path_lib')
+[0.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/ld_library_path_lib.ps1'
+[0.474s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/ld_library_path_lib.dsv'
+[0.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/ld_library_path_lib.sh'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_msgs/bin'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_msgs/lib/pkgconfig/motion_system_msgs.pc'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages'
+[0.475s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_system_msgs', 'pythonpath')
+[0.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/pythonpath.ps1'
+[0.475s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/pythonpath.dsv'
+[0.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/pythonpath.sh'
+[0.475s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_msgs/bin'
+[0.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/package.ps1'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/package.dsv'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/package.sh'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/package.bash'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/package.zsh'
+[0.476s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/motion_system_msgs/share/colcon-core/packages/motion_system_msgs)
+[0.477s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motion_system_msgs)
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_msgs' for CMake module files
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_msgs' for CMake config files
+[0.477s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_system_msgs', 'cmake_prefix_path')
+[0.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/cmake_prefix_path.ps1'
+[0.477s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/cmake_prefix_path.dsv'
+[0.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/cmake_prefix_path.sh'
+[0.478s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_msgs/lib'
+[0.478s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_system_msgs', 'ld_library_path_lib')
+[0.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/ld_library_path_lib.ps1'
+[0.478s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/ld_library_path_lib.dsv'
+[0.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/ld_library_path_lib.sh'
+[0.478s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_msgs/bin'
+[0.478s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_msgs/lib/pkgconfig/motion_system_msgs.pc'
+[0.479s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages'
+[0.479s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_system_msgs', 'pythonpath')
+[0.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/pythonpath.ps1'
+[0.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/pythonpath.dsv'
+[0.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/hook/pythonpath.sh'
+[0.479s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_msgs/bin'
+[0.479s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/package.ps1'
+[0.480s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/package.dsv'
+[0.480s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/package.sh'
+[0.480s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/package.bash'
+[0.480s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_msgs/share/motion_system_msgs/package.zsh'
+[0.480s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/motion_system_msgs/share/colcon-core/packages/motion_system_msgs)
+[0.481s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/csi/motion_system/ros2/utils_pkg' with build type 'ament_python'
+[0.481s] Level 1:colcon.colcon_core.shell:create_environment_hook('utils_pkg', 'ament_prefix_path')
+[0.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/utils_pkg/share/utils_pkg/hook/ament_prefix_path.ps1'
+[0.481s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/utils_pkg/share/utils_pkg/hook/ament_prefix_path.dsv'
+[0.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/utils_pkg/share/utils_pkg/hook/ament_prefix_path.sh'
+[0.482s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.482s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.484s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motion_system_rqt)
+[0.484s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_rqt' for CMake module files
+[0.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/build/motion_system_rqt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/csi/motion_system/build/motion_system_rqt
+[0.485s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_rqt' for CMake config files
+[0.485s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_system_rqt', 'cmake_prefix_path')
+[0.485s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/hook/cmake_prefix_path.ps1'
+[0.485s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/hook/cmake_prefix_path.dsv'
+[0.485s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/hook/cmake_prefix_path.sh'
+[0.486s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_rqt/lib'
+[0.486s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_rqt/bin'
+[0.486s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_rqt/lib/pkgconfig/motion_system_rqt.pc'
+[0.486s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages'
+[0.486s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_system_rqt', 'pythonpath')
+[0.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/hook/pythonpath.ps1'
+[0.486s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/hook/pythonpath.dsv'
+[0.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/hook/pythonpath.sh'
+[0.486s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_rqt/bin'
+[0.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/package.ps1'
+[0.487s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/package.dsv'
+[0.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/package.sh'
+[0.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/package.bash'
+[0.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/package.zsh'
+[0.487s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/motion_system_rqt/share/colcon-core/packages/motion_system_rqt)
+[0.488s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motion_system_rqt)
+[0.488s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_rqt' for CMake module files
+[0.488s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_rqt' for CMake config files
+[0.488s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_system_rqt', 'cmake_prefix_path')
+[0.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/hook/cmake_prefix_path.ps1'
+[0.488s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/hook/cmake_prefix_path.dsv'
+[0.489s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/hook/cmake_prefix_path.sh'
+[0.489s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_rqt/lib'
+[0.489s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_rqt/bin'
+[0.489s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_rqt/lib/pkgconfig/motion_system_rqt.pc'
+[0.489s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages'
+[0.489s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_system_rqt', 'pythonpath')
+[0.489s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/hook/pythonpath.ps1'
+[0.489s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/hook/pythonpath.dsv'
+[0.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/hook/pythonpath.sh'
+[0.490s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_rqt/bin'
+[0.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/package.ps1'
+[0.490s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/package.dsv'
+[0.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/package.sh'
+[0.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/package.bash'
+[0.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_rqt/share/motion_system_rqt/package.zsh'
+[0.491s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/motion_system_rqt/share/colcon-core/packages/motion_system_rqt)
+[0.594s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/csi/motion_system/ros2/utils_pkg'
+[0.594s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.594s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/common/common_robot_interface': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/common_robot_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/common_robot_interface build --build-base /home/csi/motion_system/build/common_robot_interface/build install --record /home/csi/motion_system/build/common_robot_interface/install.log --single-version-externally-managed install_data
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_robot_interface' for CMake module files
+[0.838s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/common/common_robot_interface' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/common_robot_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/common_robot_interface build --build-base /home/csi/motion_system/build/common_robot_interface/build install --record /home/csi/motion_system/build/common_robot_interface/install.log --single-version-externally-managed install_data
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_robot_interface' for CMake config files
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_robot_interface/lib'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_robot_interface/bin'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_robot_interface/lib/pkgconfig/common_robot_interface.pc'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages'
+[0.840s] Level 1:colcon.colcon_core.shell:create_environment_hook('common_robot_interface', 'pythonpath')
+[0.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/common_robot_interface/share/common_robot_interface/hook/pythonpath.ps1'
+[0.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/common_robot_interface/share/common_robot_interface/hook/pythonpath.dsv'
+[0.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/common_robot_interface/share/common_robot_interface/hook/pythonpath.sh'
+[0.841s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/common_robot_interface/bin'
+[0.841s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(common_robot_interface)
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/common_robot_interface/share/common_robot_interface/package.ps1'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/common_robot_interface/share/common_robot_interface/package.dsv'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/common_robot_interface/share/common_robot_interface/package.sh'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/common_robot_interface/share/common_robot_interface/package.bash'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/common_robot_interface/share/common_robot_interface/package.zsh'
+[0.842s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/common_robot_interface/share/colcon-core/packages/common_robot_interface)
+[0.842s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/csi/motion_system/lib/robot_manager/core/robot_interface' with build type 'ament_python'
+[0.842s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interface', 'ament_prefix_path')
+[0.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/robot_interface/share/robot_interface/hook/ament_prefix_path.ps1'
+[0.842s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/robot_interface/share/robot_interface/hook/ament_prefix_path.dsv'
+[0.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/robot_interface/share/robot_interface/hook/ament_prefix_path.sh'
+[0.843s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.843s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.952s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/csi/motion_system/lib/robot_manager/core/robot_interface'
+[0.952s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.953s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.957s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/ros2/utils_pkg': CMAKE_PREFIX_PATH=/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/csi/motion_system/install/motion_system_msgs/lib:/home/csi/motion_system/install/motor_manager/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/openrobots/lib:/usr/local/cuda-13.2/lib64 PYTHONPATH=/home/csi/motion_system/build/utils_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/utils_pkg build --build-base /home/csi/motion_system/build/utils_pkg/build install --record /home/csi/motion_system/build/utils_pkg/install.log --single-version-externally-managed install_data
+[1.195s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/utils_pkg' for CMake module files
+[1.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/ros2/utils_pkg' returned '0': CMAKE_PREFIX_PATH=/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/csi/motion_system/install/motion_system_msgs/lib:/home/csi/motion_system/install/motor_manager/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/openrobots/lib:/usr/local/cuda-13.2/lib64 PYTHONPATH=/home/csi/motion_system/build/utils_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/utils_pkg build --build-base /home/csi/motion_system/build/utils_pkg/build install --record /home/csi/motion_system/build/utils_pkg/install.log --single-version-externally-managed install_data
+[1.196s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/utils_pkg' for CMake config files
+[1.197s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/utils_pkg/lib'
+[1.197s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/utils_pkg/bin'
+[1.197s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/utils_pkg/lib/pkgconfig/utils_pkg.pc'
+[1.198s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages'
+[1.198s] Level 1:colcon.colcon_core.shell:create_environment_hook('utils_pkg', 'pythonpath')
+[1.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/utils_pkg/share/utils_pkg/hook/pythonpath.ps1'
+[1.198s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/utils_pkg/share/utils_pkg/hook/pythonpath.dsv'
+[1.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/utils_pkg/share/utils_pkg/hook/pythonpath.sh'
+[1.198s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/utils_pkg/bin'
+[1.199s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(utils_pkg)
+[1.199s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/utils_pkg/share/utils_pkg/package.ps1'
+[1.199s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/utils_pkg/share/utils_pkg/package.dsv'
+[1.199s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/utils_pkg/share/utils_pkg/package.sh'
+[1.199s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/utils_pkg/share/utils_pkg/package.bash'
+[1.199s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/utils_pkg/share/utils_pkg/package.zsh'
+[1.200s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/utils_pkg/share/colcon-core/packages/utils_pkg)
+[1.239s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/lib/robot_manager/core/robot_interface': AMENT_PREFIX_PATH=/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/robot_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/robot_interface build --build-base /home/csi/motion_system/build/robot_interface/build install --record /home/csi/motion_system/build/robot_interface/install.log --single-version-externally-managed install_data
+[1.479s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robot_interface' for CMake module files
+[1.480s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robot_interface' for CMake config files
+[1.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/lib/robot_manager/core/robot_interface' returned '0': AMENT_PREFIX_PATH=/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/robot_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/robot_interface build --build-base /home/csi/motion_system/build/robot_interface/build install --record /home/csi/motion_system/build/robot_interface/install.log --single-version-externally-managed install_data
+[1.481s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robot_interface/lib'
+[1.481s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robot_interface/bin'
+[1.481s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robot_interface/lib/pkgconfig/robot_interface.pc'
+[1.481s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages'
+[1.481s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interface', 'pythonpath')
+[1.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/robot_interface/share/robot_interface/hook/pythonpath.ps1'
+[1.482s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/robot_interface/share/robot_interface/hook/pythonpath.dsv'
+[1.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/robot_interface/share/robot_interface/hook/pythonpath.sh'
+[1.482s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robot_interface/bin'
+[1.482s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_interface)
+[1.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/robot_interface/share/robot_interface/package.ps1'
+[1.483s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/robot_interface/share/robot_interface/package.dsv'
+[1.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/robot_interface/share/robot_interface/package.sh'
+[1.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/robot_interface/share/robot_interface/package.bash'
+[1.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/robot_interface/share/robot_interface/package.zsh'
+[1.483s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/robot_interface/share/colcon-core/packages/robot_interface)
+[1.484s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/csi/motion_system/lib/robot_manager/kinematics' with build type 'ament_python'
+[1.484s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinematics', 'ament_prefix_path')
+[1.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/kinematics/share/kinematics/hook/ament_prefix_path.ps1'
+[1.484s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/kinematics/share/kinematics/hook/ament_prefix_path.dsv'
+[1.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/kinematics/share/kinematics/hook/ament_prefix_path.sh'
+[1.485s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.485s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.488s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/csi/motion_system/lib/robot_manager/planner' with build type 'ament_python'
+[1.488s] Level 1:colcon.colcon_core.shell:create_environment_hook('planner', 'ament_prefix_path')
+[1.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/planner/share/planner/hook/ament_prefix_path.ps1'
+[1.488s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/planner/share/planner/hook/ament_prefix_path.dsv'
+[1.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/planner/share/planner/hook/ament_prefix_path.sh'
+[1.488s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.488s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.490s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/csi/motion_system/lib/robot_manager/scheduler' with build type 'ament_python'
+[1.490s] Level 1:colcon.colcon_core.shell:create_environment_hook('scheduler', 'ament_prefix_path')
+[1.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/scheduler/share/scheduler/hook/ament_prefix_path.ps1'
+[1.490s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/scheduler/share/scheduler/hook/ament_prefix_path.dsv'
+[1.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/scheduler/share/scheduler/hook/ament_prefix_path.sh'
+[1.490s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.490s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.598s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/csi/motion_system/lib/robot_manager/planner'
+[1.598s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.598s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.702s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/csi/motion_system/lib/robot_manager/scheduler'
+[1.703s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.703s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.808s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/csi/motion_system/lib/robot_manager/kinematics'
+[1.809s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.809s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/lib/robot_manager/planner': AMENT_PREFIX_PATH=/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/planner build --build-base /home/csi/motion_system/build/planner/build install --record /home/csi/motion_system/build/planner/install.log --single-version-externally-managed install_data
+[2.108s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/lib/robot_manager/scheduler': AMENT_PREFIX_PATH=/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/scheduler/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/scheduler build --build-base /home/csi/motion_system/build/scheduler/build install --record /home/csi/motion_system/build/scheduler/install.log --single-version-externally-managed install_data
+[2.109s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/lib/robot_manager/kinematics': AMENT_PREFIX_PATH=/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/kinematics build --build-base /home/csi/motion_system/build/kinematics/build install --record /home/csi/motion_system/build/kinematics/install.log --single-version-externally-managed install_data
+[2.344s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/planner' for CMake module files
+[2.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/lib/robot_manager/planner' returned '0': AMENT_PREFIX_PATH=/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/planner build --build-base /home/csi/motion_system/build/planner/build install --record /home/csi/motion_system/build/planner/install.log --single-version-externally-managed install_data
+[2.345s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/planner' for CMake config files
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/planner/lib'
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/planner/bin'
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/planner/lib/pkgconfig/planner.pc'
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/planner/lib/python3.12/site-packages'
+[2.346s] Level 1:colcon.colcon_core.shell:create_environment_hook('planner', 'pythonpath')
+[2.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/planner/share/planner/hook/pythonpath.ps1'
+[2.347s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/planner/share/planner/hook/pythonpath.dsv'
+[2.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/planner/share/planner/hook/pythonpath.sh'
+[2.348s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/planner/bin'
+[2.348s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(planner)
+[2.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/planner/share/planner/package.ps1'
+[2.348s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/planner/share/planner/package.dsv'
+[2.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/planner/share/planner/package.sh'
+[2.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/planner/share/planner/package.bash'
+[2.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/planner/share/planner/package.zsh'
+[2.349s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/planner/share/colcon-core/packages/planner)
+[2.353s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/scheduler' for CMake module files
+[2.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/lib/robot_manager/scheduler' returned '0': AMENT_PREFIX_PATH=/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/scheduler/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/scheduler build --build-base /home/csi/motion_system/build/scheduler/build install --record /home/csi/motion_system/build/scheduler/install.log --single-version-externally-managed install_data
+[2.354s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/scheduler' for CMake config files
+[2.355s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/scheduler/lib'
+[2.355s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/scheduler/bin'
+[2.355s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/scheduler/lib/pkgconfig/scheduler.pc'
+[2.355s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages'
+[2.355s] Level 1:colcon.colcon_core.shell:create_environment_hook('scheduler', 'pythonpath')
+[2.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/scheduler/share/scheduler/hook/pythonpath.ps1'
+[2.356s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/scheduler/share/scheduler/hook/pythonpath.dsv'
+[2.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/scheduler/share/scheduler/hook/pythonpath.sh'
+[2.357s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/scheduler/bin'
+[2.357s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scheduler)
+[2.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/scheduler/share/scheduler/package.ps1'
+[2.357s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/scheduler/share/scheduler/package.dsv'
+[2.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/scheduler/share/scheduler/package.sh'
+[2.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/scheduler/share/scheduler/package.bash'
+[2.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/scheduler/share/scheduler/package.zsh'
+[2.358s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/scheduler/share/colcon-core/packages/scheduler)
+[2.359s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/kinematics' for CMake module files
+[2.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/lib/robot_manager/kinematics' returned '0': AMENT_PREFIX_PATH=/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/kinematics build --build-base /home/csi/motion_system/build/kinematics/build install --record /home/csi/motion_system/build/kinematics/install.log --single-version-externally-managed install_data
+[2.359s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/kinematics' for CMake config files
+[2.359s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/kinematics/lib'
+[2.359s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/kinematics/bin'
+[2.359s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/kinematics/lib/pkgconfig/kinematics.pc'
+[2.360s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages'
+[2.360s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinematics', 'pythonpath')
+[2.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/kinematics/share/kinematics/hook/pythonpath.ps1'
+[2.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/kinematics/share/kinematics/hook/pythonpath.dsv'
+[2.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/kinematics/share/kinematics/hook/pythonpath.sh'
+[2.360s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/kinematics/bin'
+[2.360s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kinematics)
+[2.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/kinematics/share/kinematics/package.ps1'
+[2.361s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/kinematics/share/kinematics/package.dsv'
+[2.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/kinematics/share/kinematics/package.sh'
+[2.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/kinematics/share/kinematics/package.bash'
+[2.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/kinematics/share/kinematics/package.zsh'
+[2.361s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/kinematics/share/colcon-core/packages/kinematics)
+[2.362s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/csi/motion_system/lib/robot_manager/robots' with build type 'ament_python'
+[2.362s] Level 1:colcon.colcon_core.shell:create_environment_hook('robots', 'ament_prefix_path')
+[2.362s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/robots/share/robots/hook/ament_prefix_path.ps1'
+[2.362s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/robots/share/robots/hook/ament_prefix_path.dsv'
+[2.362s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/robots/share/robots/hook/ament_prefix_path.sh'
+[2.362s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.362s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.472s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/csi/motion_system/lib/robot_manager/robots'
+[2.472s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.472s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.761s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/lib/robot_manager/robots': AMENT_PREFIX_PATH=/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/robots/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/robots build --build-base /home/csi/motion_system/build/robots/build install --record /home/csi/motion_system/build/robots/install.log --single-version-externally-managed install_data
+[3.000s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robots' for CMake module files
+[3.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/lib/robot_manager/robots' returned '0': AMENT_PREFIX_PATH=/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/robots/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/robots build --build-base /home/csi/motion_system/build/robots/build install --record /home/csi/motion_system/build/robots/install.log --single-version-externally-managed install_data
+[3.001s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robots' for CMake config files
+[3.001s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robots/lib'
+[3.001s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robots/bin'
+[3.001s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robots/lib/pkgconfig/robots.pc'
+[3.001s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robots/lib/python3.12/site-packages'
+[3.002s] Level 1:colcon.colcon_core.shell:create_environment_hook('robots', 'pythonpath')
+[3.002s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/robots/share/robots/hook/pythonpath.ps1'
+[3.002s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/robots/share/robots/hook/pythonpath.dsv'
+[3.003s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/robots/share/robots/hook/pythonpath.sh'
+[3.003s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robots/bin'
+[3.003s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robots)
+[3.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/robots/share/robots/package.ps1'
+[3.003s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/robots/share/robots/package.dsv'
+[3.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/robots/share/robots/package.sh'
+[3.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/robots/share/robots/package.bash'
+[3.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/robots/share/robots/package.zsh'
+[3.004s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/robots/share/colcon-core/packages/robots)
+[3.004s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/csi/motion_system/lib/robot_manager/robot_manager' with build type 'ament_python'
+[3.004s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_manager', 'ament_prefix_path')
+[3.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/robot_manager/share/robot_manager/hook/ament_prefix_path.ps1'
+[3.005s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/robot_manager/share/robot_manager/hook/ament_prefix_path.dsv'
+[3.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/robot_manager/share/robot_manager/hook/ament_prefix_path.sh'
+[3.005s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.005s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.117s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/csi/motion_system/lib/robot_manager/robot_manager'
+[3.117s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.117s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.408s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/lib/robot_manager/robot_manager': AMENT_PREFIX_PATH=/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/robot_manager/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/robot_manager build --build-base /home/csi/motion_system/build/robot_manager/build install --record /home/csi/motion_system/build/robot_manager/install.log --single-version-externally-managed install_data
+[3.648s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robot_manager' for CMake module files
+[3.649s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/lib/robot_manager/robot_manager' returned '0': AMENT_PREFIX_PATH=/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/build/robot_manager/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/robot_manager build --build-base /home/csi/motion_system/build/robot_manager/build install --record /home/csi/motion_system/build/robot_manager/install.log --single-version-externally-managed install_data
+[3.650s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robot_manager' for CMake config files
+[3.650s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robot_manager/lib'
+[3.650s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robot_manager/bin'
+[3.650s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robot_manager/lib/pkgconfig/robot_manager.pc'
+[3.650s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages'
+[3.650s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_manager', 'pythonpath')
+[3.651s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/robot_manager/share/robot_manager/hook/pythonpath.ps1'
+[3.651s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/robot_manager/share/robot_manager/hook/pythonpath.dsv'
+[3.651s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/robot_manager/share/robot_manager/hook/pythonpath.sh'
+[3.652s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/robot_manager/bin'
+[3.652s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_manager)
+[3.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/robot_manager/share/robot_manager/package.ps1'
+[3.652s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/robot_manager/share/robot_manager/package.dsv'
+[3.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/robot_manager/share/robot_manager/package.sh'
+[3.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/robot_manager/share/robot_manager/package.bash'
+[3.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/robot_manager/share/robot_manager/package.zsh'
+[3.653s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/robot_manager/share/colcon-core/packages/robot_manager)
+[3.653s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/csi/motion_system/ros2/motion_system_pkg' with build type 'ament_cmake'
+[3.653s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/csi/motion_system/ros2/motion_system_pkg'
+[3.653s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.653s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/build/motion_system_pkg': AMENT_PREFIX_PATH=/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/motion_system_rqt:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/cmake --build /home/csi/motion_system/build/motion_system_pkg -- -j24 -l24
+[3.704s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/build/motion_system_pkg' returned '0': AMENT_PREFIX_PATH=/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/motion_system_rqt:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/cmake --build /home/csi/motion_system/build/motion_system_pkg -- -j24 -l24
+[3.705s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/csi/motion_system/build/motion_system_pkg': AMENT_PREFIX_PATH=/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/motion_system_rqt:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/cmake --install /home/csi/motion_system/build/motion_system_pkg
+[3.710s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motion_system_pkg)
+[3.710s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_pkg' for CMake module files
+[3.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/csi/motion_system/build/motion_system_pkg' returned '0': AMENT_PREFIX_PATH=/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_rqt:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/csi/motion_system/install/motor_manager:/home/csi/motion_system/install/motion_system_msgs:/home/csi/motion_system/install/common_motor_interface:/home/csi/motion_system/install/motion_system_pkg:/home/csi/motion_system/install/motion_system_rqt:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/home/csi/motion_system/install/utils_pkg:/home/csi/motion_system/install/robot_manager:/home/csi/motion_system/install/robots:/home/csi/motion_system/install/scheduler:/home/csi/motion_system/install/planner:/home/csi/motion_system/install/kinematics:/home/csi/motion_system/install/robot_interface:/home/csi/motion_system/install/common_robot_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/csi/motion_system/install/robot_manager/lib/python3.12/site-packages:/home/csi/motion_system/install/robots/lib/python3.12/site-packages:/home/csi/motion_system/install/scheduler/lib/python3.12/site-packages:/home/csi/motion_system/install/planner/lib/python3.12/site-packages:/home/csi/motion_system/install/kinematics/lib/python3.12/site-packages:/home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/home/csi/motion_system/install/common_robot_interface/lib/python3.12/site-packages:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_rqt/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/cmake --install /home/csi/motion_system/build/motion_system_pkg
+[3.710s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_pkg' for CMake config files
+[3.710s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_system_pkg', 'cmake_prefix_path')
+[3.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/hook/cmake_prefix_path.ps1'
+[3.711s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/hook/cmake_prefix_path.dsv'
+[3.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/hook/cmake_prefix_path.sh'
+[3.711s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_pkg/lib'
+[3.711s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_pkg/bin'
+[3.711s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_pkg/lib/pkgconfig/motion_system_pkg.pc'
+[3.711s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_pkg/lib/python3.12/site-packages'
+[3.711s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_pkg/bin'
+[3.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/package.ps1'
+[3.712s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/package.dsv'
+[3.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/package.sh'
+[3.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/package.bash'
+[3.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/package.zsh'
+[3.712s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/motion_system_pkg/share/colcon-core/packages/motion_system_pkg)
+[3.713s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motion_system_pkg)
+[3.713s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_pkg' for CMake module files
+[3.713s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_pkg' for CMake config files
+[3.713s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_system_pkg', 'cmake_prefix_path')
+[3.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/hook/cmake_prefix_path.ps1'
+[3.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/hook/cmake_prefix_path.dsv'
+[3.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/hook/cmake_prefix_path.sh'
+[3.714s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_pkg/lib'
+[3.714s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_pkg/bin'
+[3.714s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_pkg/lib/pkgconfig/motion_system_pkg.pc'
+[3.714s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_pkg/lib/python3.12/site-packages'
+[3.714s] Level 1:colcon.colcon_core.environment:checking '/home/csi/motion_system/install/motion_system_pkg/bin'
+[3.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/package.ps1'
+[3.714s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/package.dsv'
+[3.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/package.sh'
+[3.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/package.bash'
+[3.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/csi/motion_system/install/motion_system_pkg/share/motion_system_pkg/package.zsh'
+[3.715s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/csi/motion_system/install/motion_system_pkg/share/colcon-core/packages/motion_system_pkg)
+[3.715s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.715s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.715s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.715s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.718s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.718s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.718s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.738s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.739s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/csi/motion_system/install/local_setup.ps1'
+[3.741s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/csi/motion_system/install/_local_setup_util_ps1.py'
+[3.743s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/csi/motion_system/install/setup.ps1'
+[3.744s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/csi/motion_system/install/local_setup.sh'
+[3.744s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/csi/motion_system/install/_local_setup_util_sh.py'
+[3.745s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/csi/motion_system/install/setup.sh'
+[3.745s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/csi/motion_system/install/local_setup.bash'
+[3.745s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/csi/motion_system/install/setup.bash'
+[3.746s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/csi/motion_system/install/local_setup.zsh'
+[3.746s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/csi/motion_system/install/setup.zsh'

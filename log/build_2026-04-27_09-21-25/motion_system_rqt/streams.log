@@ -1,0 +1,15 @@
+[0.005s] Invoking command in '/home/csi/motion_system/build/motion_system_rqt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/csi/motion_system/ros2/motion_system_rqt -DPython3_EXECUTABLE=/usr/bin/python3 -DCMAKE_INSTALL_PREFIX=/home/csi/motion_system/install/motion_system_rqt
+[0.014s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.132s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.187s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.263s] CMake Error at /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:66 (message):
+[0.263s]   ament_python_install_package() the Python package folder
+[0.263s]   '/home/csi/motion_system/ros2/motion_system_rqt/src/motion_system_rqt'
+[0.263s]   doesn't contain an '__init__.py' file
+[0.263s] Call Stack (most recent call first):
+[0.263s]   /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[0.263s]   CMakeLists.txt:27 (ament_python_install_package)
+[0.263s] 
+[0.263s] 
+[0.263s] -- Configuring incomplete, errors occurred!
+[0.265s] Invoked command in '/home/csi/motion_system/build/motion_system_rqt' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/csi/motion_system/ros2/motion_system_rqt -DPython3_EXECUTABLE=/usr/bin/python3 -DCMAKE_INSTALL_PREFIX=/home/csi/motion_system/install/motion_system_rqt

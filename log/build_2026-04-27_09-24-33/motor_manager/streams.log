@@ -1,0 +1,77 @@
+[0.004s] Invoking command in '/home/csi/motion_system/build/motor_manager': AMENT_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/opt/openrobots:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/csi/motion_system/lib/motor_manager -DPython3_EXECUTABLE=/usr/bin/python3 -DCMAKE_INSTALL_PREFIX=/home/csi/motion_system/install/motor_manager
+[0.041s] -- The CXX compiler identification is GNU 13.3.0
+[0.051s] -- Detecting CXX compiler ABI info
+[0.184s] -- Detecting CXX compiler ABI info - done
+[0.184s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.184s] -- Detecting CXX compile features
+[0.184s] -- Detecting CXX compile features - done
+[0.184s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.234s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.283s] -- Found common_motor_interface: 0.1.0 (/home/csi/motion_system/install/common_motor_interface/share/common_motor_interface/cmake)
+[0.341s] -- Configuring done (0.3s)
+[0.347s] -- Generating done (0.0s)
+[0.349s] -- Build files have been written to: /home/csi/motion_system/build/motor_manager
+[0.351s] Invoked command in '/home/csi/motion_system/build/motor_manager' returned '0': AMENT_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/opt/openrobots:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/csi/motion_system/lib/motor_manager -DPython3_EXECUTABLE=/usr/bin/python3 -DCMAKE_INSTALL_PREFIX=/home/csi/motion_system/install/motor_manager
+[0.352s] Invoking command in '/home/csi/motion_system/build/motor_manager': AMENT_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/opt/openrobots:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csi/motion_system/build/motor_manager -- -j24 -l24
+[0.379s] [ 44%] Building CXX object communications/ethercat/CMakeFiles/ethercat.dir/src/ethercat_master.cpp.o
+[0.379s] [ 44%] Building CXX object communications/ethercat/CMakeFiles/ethercat.dir/src/ethercat_controller.cpp.o
+[0.379s] [ 44%] Building CXX object hardware/zeroerr/CMakeFiles/zeroerr.dir/src/zeroerr_driver.cpp.o
+[0.380s] [ 44%] Building CXX object hardware/minas/CMakeFiles/minas.dir/src/minas_driver.cpp.o
+[0.560s] [ 55%] Linking CXX static library libethercat.a
+[0.580s] [ 55%] Built target ethercat
+[0.947s] [ 77%] Linking CXX static library libzeroerr.a
+[0.947s] [ 77%] Linking CXX static library libminas.a
+[0.947s] [ 77%] Built target zeroerr
+[0.947s] [ 77%] Built target minas
+[0.947s] [ 88%] Building CXX object motor_manager/CMakeFiles/motor_manager.dir/src/motor_manager.cpp.o
+[1.716s] [100%] Linking CXX shared library libmotor_manager.so
+[1.737s] [100%] Built target motor_manager
+[1.741s] Invoked command in '/home/csi/motion_system/build/motor_manager' returned '0': AMENT_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/opt/openrobots:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csi/motion_system/build/motor_manager -- -j24 -l24
+[1.742s] Invoking command in '/home/csi/motion_system/build/motor_manager': AMENT_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/opt/openrobots:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/csi/motion_system/build/motor_manager
+[1.745s] -- Install configuration: ""
+[1.745s] -- Installing: /home/csi/motion_system/install/motor_manager/include
+[1.745s] -- Installing: /home/csi/motion_system/install/motor_manager/include/motor_interface
+[1.746s] -- Installing: /home/csi/motion_system/install/motor_manager/include/motor_interface/motor_master.hpp
+[1.747s] -- Installing: /home/csi/motion_system/install/motor_manager/include/motor_interface/motor_controller.hpp
+[1.747s] -- Installing: /home/csi/motion_system/install/motor_manager/include/motor_interface/motor_driver.hpp
+[1.747s] -- Up-to-date: /home/csi/motion_system/install/motor_manager/include
+[1.747s] -- Installing: /home/csi/motion_system/install/motor_manager/include/ethercat
+[1.747s] -- Installing: /home/csi/motion_system/install/motor_manager/include/ethercat/ethercat_controller.hpp
+[1.747s] -- Installing: /home/csi/motion_system/install/motor_manager/include/ethercat/ethercat_master.hpp
+[1.747s] -- Up-to-date: /home/csi/motion_system/install/motor_manager/include
+[1.748s] -- Installing: /home/csi/motion_system/install/motor_manager/include/minas
+[1.748s] -- Installing: /home/csi/motion_system/install/motor_manager/include/minas/minas_driver.hpp
+[1.748s] -- Up-to-date: /home/csi/motion_system/install/motor_manager/include
+[1.748s] -- Installing: /home/csi/motion_system/install/motor_manager/include/zeroerr
+[1.748s] -- Installing: /home/csi/motion_system/install/motor_manager/include/zeroerr/zeroerr_driver.hpp
+[1.748s] -- Up-to-date: /home/csi/motion_system/install/motor_manager/include
+[1.748s] -- Installing: /home/csi/motion_system/install/motor_manager/include/motor_manager
+[1.748s] -- Installing: /home/csi/motion_system/install/motor_manager/include/motor_manager/motor_manager.hpp
+[1.748s] -- Installing: /home/csi/motion_system/install/motor_manager/lib/libmotor_manager.so
+[1.748s] -- Set non-toolchain portion of runtime path of "/home/csi/motion_system/install/motor_manager/lib/libmotor_manager.so" to ""
+[1.750s] -- Installing: /home/csi/motion_system/install/motor_manager/lib/libethercat.a
+[1.750s] -- Installing: /home/csi/motion_system/install/motor_manager/lib/libminas.a
+[1.750s] -- Installing: /home/csi/motion_system/install/motor_manager/lib/libzeroerr.a
+[1.750s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/environment/library_path.sh
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/environment/library_path.dsv
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/ament_index/resource_index/package_run_dependencies/motor_manager
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/ament_index/resource_index/parent_prefix_path/motor_manager
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/environment/ament_prefix_path.sh
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/environment/ament_prefix_path.dsv
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/environment/path.sh
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/environment/path.dsv
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/local_setup.bash
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/local_setup.sh
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/local_setup.zsh
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/local_setup.dsv
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/package.dsv
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/ament_index/resource_index/packages/motor_manager
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/cmake/export_motor_managerExport.cmake
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/cmake/export_motor_managerExport-noconfig.cmake
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/cmake/ament_cmake_export_targets-extras.cmake
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/cmake/motor_managerConfig.cmake
+[1.751s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/cmake/motor_managerConfig-version.cmake
+[1.752s] -- Installing: /home/csi/motion_system/install/motor_manager/share/motor_manager/package.xml
+[1.752s] Invoked command in '/home/csi/motion_system/build/motor_manager' returned '0': AMENT_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/csi/motion_system/install/common_motor_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/opt/openrobots:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/csi/motion_system/build/motor_manager

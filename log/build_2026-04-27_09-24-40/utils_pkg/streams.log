@@ -1,0 +1,22 @@
+[0.531s] Invoking command in '/home/csi/motion_system/ros2/utils_pkg': AMENT_PREFIX_PATH=/home/csi/motion_system/install/motion_system_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/csi/motion_system/install/motion_system_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/csi/motion_system/install/motion_system_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/csi/motion_system/build/utils_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/utils_pkg build --build-base /home/csi/motion_system/build/utils_pkg/build install --record /home/csi/motion_system/build/utils_pkg/install.log --single-version-externally-managed install_data
+[0.657s] running egg_info
+[0.666s] writing ../../build/utils_pkg/utils_pkg.egg-info/PKG-INFO
+[0.666s] writing dependency_links to ../../build/utils_pkg/utils_pkg.egg-info/dependency_links.txt
+[0.666s] writing entry points to ../../build/utils_pkg/utils_pkg.egg-info/entry_points.txt
+[0.666s] writing requirements to ../../build/utils_pkg/utils_pkg.egg-info/requires.txt
+[0.666s] writing top-level names to ../../build/utils_pkg/utils_pkg.egg-info/top_level.txt
+[0.684s] reading manifest file '../../build/utils_pkg/utils_pkg.egg-info/SOURCES.txt'
+[0.684s] writing manifest file '../../build/utils_pkg/utils_pkg.egg-info/SOURCES.txt'
+[0.684s] running build
+[0.684s] running build_py
+[0.684s] running install
+[0.687s] running install_lib
+[0.696s] running install_data
+[0.696s] running install_egg_info
+[0.705s] removing '/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages/utils_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[0.705s] Copying ../../build/utils_pkg/utils_pkg.egg-info to /home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages/utils_pkg-0.0.0-py3.12.egg-info
+[0.705s] running install_scripts
+[0.761s] Installing rocking_chair_position_command script to /home/csi/motion_system/install/utils_pkg/lib/utils_pkg
+[0.762s] Installing sine_motor_command_publisher script to /home/csi/motion_system/install/utils_pkg/lib/utils_pkg
+[0.762s] writing list of installed files to '/home/csi/motion_system/build/utils_pkg/install.log'
+[0.774s] Invoked command in '/home/csi/motion_system/ros2/utils_pkg' returned '0': AMENT_PREFIX_PATH=/home/csi/motion_system/install/motion_system_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/csi/motion_system/install/motion_system_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/csi/motion_system/install/motion_system_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/csi/motion_system/build/utils_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/utils_pkg build --build-base /home/csi/motion_system/build/utils_pkg/build install --record /home/csi/motion_system/build/utils_pkg/install.log --single-version-externally-managed install_data

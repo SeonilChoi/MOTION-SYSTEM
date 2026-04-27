@@ -65,7 +65,8 @@ MotorManagerNode::~MotorManagerNode()
 
 void MotorManagerNode::motor_command_callback(const MotorStatus::SharedPtr msg)
 {
-    const size_t size = msg->controller_index.size();
+    //const size_t size = msg->controller_index.size();
+    const uint8_t size = motor_manager_->number_of_controllers();
     
     motor_interface::motor_frame_t motor_frame[motor_manager::MAX_CONTROLLER_SIZE] = {};
 
@@ -73,11 +74,7 @@ void MotorManagerNode::motor_command_callback(const MotorStatus::SharedPtr msg)
         motor_frame[i].number_of_target_interfaces = msg->number_of_target_interfaces[i];
 
         const uint8_t n_if = motor_frame[i].number_of_target_interfaces;
-        const size_t vec_n = msg->target_interface_id[i].data.size();
-        const uint8_t copy_n = static_cast<uint8_t>(std::min(
-            static_cast<size_t>(n_if),
-            vec_n));
-        for (uint8_t j = 0; j < copy_n; j++) {
+        for (uint8_t j = 0; j < n_if; j++) {
             motor_frame[i].target_interface_id[j] = msg->target_interface_id[i].data[j];
         }
         motor_frame[i].controller_index = msg->controller_index[i];

@@ -1,0 +1,10 @@
+Built target ament_cmake_python_copy_motion_system_rqt
+running egg_info
+creating motion_system_rqt.egg-info
+writing motion_system_rqt.egg-info/PKG-INFO
+writing dependency_links to motion_system_rqt.egg-info/dependency_links.txt
+writing top-level names to motion_system_rqt.egg-info/top_level.txt
+writing manifest file 'motion_system_rqt.egg-info/SOURCES.txt'
+reading manifest file 'motion_system_rqt.egg-info/SOURCES.txt'
+writing manifest file 'motion_system_rqt.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_motion_system_rqt_egg

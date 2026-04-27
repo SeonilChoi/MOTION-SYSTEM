@@ -1,0 +1,41 @@
+[0.410s] Invoking command in '/home/csi/motion_system/ros2/utils_pkg': AMENT_PREFIX_PATH=/home/csi/motion_system/install/motion_system_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/csi/motion_system/install/motion_system_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/opt/openrobots CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/csi/motion_system/install/motion_system_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/csi/motion_system/build/utils_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/utils_pkg build --build-base /home/csi/motion_system/build/utils_pkg/build install --record /home/csi/motion_system/build/utils_pkg/install.log --single-version-externally-managed install_data
+[0.531s] running egg_info
+[0.531s] creating ../../build/utils_pkg/utils_pkg.egg-info
+[0.540s] writing ../../build/utils_pkg/utils_pkg.egg-info/PKG-INFO
+[0.540s] writing dependency_links to ../../build/utils_pkg/utils_pkg.egg-info/dependency_links.txt
+[0.540s] writing entry points to ../../build/utils_pkg/utils_pkg.egg-info/entry_points.txt
+[0.540s] writing requirements to ../../build/utils_pkg/utils_pkg.egg-info/requires.txt
+[0.540s] writing top-level names to ../../build/utils_pkg/utils_pkg.egg-info/top_level.txt
+[0.540s] writing manifest file '../../build/utils_pkg/utils_pkg.egg-info/SOURCES.txt'
+[0.556s] reading manifest file '../../build/utils_pkg/utils_pkg.egg-info/SOURCES.txt'
+[0.557s] writing manifest file '../../build/utils_pkg/utils_pkg.egg-info/SOURCES.txt'
+[0.557s] running build
+[0.557s] running build_py
+[0.557s] creating /home/csi/motion_system/build/utils_pkg/build
+[0.557s] creating /home/csi/motion_system/build/utils_pkg/build/lib
+[0.557s] creating /home/csi/motion_system/build/utils_pkg/build/lib/utils_pkg
+[0.557s] copying utils_pkg/__init__.py -> /home/csi/motion_system/build/utils_pkg/build/lib/utils_pkg
+[0.557s] copying utils_pkg/rocking_chair_position_command.py -> /home/csi/motion_system/build/utils_pkg/build/lib/utils_pkg
+[0.557s] copying utils_pkg/sine_motor_command_publisher.py -> /home/csi/motion_system/build/utils_pkg/build/lib/utils_pkg
+[0.557s] running install
+[0.560s] running install_lib
+[0.568s] creating /home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages/utils_pkg
+[0.568s] copying /home/csi/motion_system/build/utils_pkg/build/lib/utils_pkg/__init__.py -> /home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages/utils_pkg
+[0.568s] copying /home/csi/motion_system/build/utils_pkg/build/lib/utils_pkg/rocking_chair_position_command.py -> /home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages/utils_pkg
+[0.568s] copying /home/csi/motion_system/build/utils_pkg/build/lib/utils_pkg/sine_motor_command_publisher.py -> /home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages/utils_pkg
+[0.568s] byte-compiling /home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages/utils_pkg/__init__.py to __init__.cpython-312.pyc
+[0.568s] byte-compiling /home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages/utils_pkg/rocking_chair_position_command.py to rocking_chair_position_command.cpython-312.pyc
+[0.568s] byte-compiling /home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages/utils_pkg/sine_motor_command_publisher.py to sine_motor_command_publisher.cpython-312.pyc
+[0.569s] running install_data
+[0.569s] creating /home/csi/motion_system/install/utils_pkg/share/ament_index
+[0.569s] creating /home/csi/motion_system/install/utils_pkg/share/ament_index/resource_index
+[0.569s] creating /home/csi/motion_system/install/utils_pkg/share/ament_index/resource_index/packages
+[0.569s] copying resource/utils_pkg -> /home/csi/motion_system/install/utils_pkg/share/ament_index/resource_index/packages
+[0.569s] copying package.xml -> /home/csi/motion_system/install/utils_pkg/share/utils_pkg
+[0.569s] running install_egg_info
+[0.578s] Copying ../../build/utils_pkg/utils_pkg.egg-info to /home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages/utils_pkg-0.0.0-py3.12.egg-info
+[0.578s] running install_scripts
+[0.632s] Installing rocking_chair_position_command script to /home/csi/motion_system/install/utils_pkg/lib/utils_pkg
+[0.632s] Installing sine_motor_command_publisher script to /home/csi/motion_system/install/utils_pkg/lib/utils_pkg
+[0.632s] writing list of installed files to '/home/csi/motion_system/build/utils_pkg/install.log'
+[0.644s] Invoked command in '/home/csi/motion_system/ros2/utils_pkg' returned '0': AMENT_PREFIX_PATH=/home/csi/motion_system/install/motion_system_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/csi/motion_system/install/motion_system_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/openrobots:/opt/openrobots CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/csi/motion_system/install/motion_system_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/csi/motion_system/build/utils_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/csi/motion_system/install/utils_pkg/lib/python3.12/site-packages:/home/csi/motion_system/install/motion_system_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.8/site-packages:/opt/openrobots/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/utils_pkg build --build-base /home/csi/motion_system/build/utils_pkg/build install --record /home/csi/motion_system/build/utils_pkg/install.log --single-version-externally-managed install_data

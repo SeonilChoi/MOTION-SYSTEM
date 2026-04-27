@@ -1,0 +1,42 @@
+running egg_info
+creating ../../../../build/robot_interface/robot_interface.egg-info
+writing ../../../../build/robot_interface/robot_interface.egg-info/PKG-INFO
+writing dependency_links to ../../../../build/robot_interface/robot_interface.egg-info/dependency_links.txt
+writing requirements to ../../../../build/robot_interface/robot_interface.egg-info/requires.txt
+writing top-level names to ../../../../build/robot_interface/robot_interface.egg-info/top_level.txt
+writing manifest file '../../../../build/robot_interface/robot_interface.egg-info/SOURCES.txt'
+reading manifest file '../../../../build/robot_interface/robot_interface.egg-info/SOURCES.txt'
+writing manifest file '../../../../build/robot_interface/robot_interface.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/csi/motion_system/build/robot_interface/build
+creating /home/csi/motion_system/build/robot_interface/build/lib
+creating /home/csi/motion_system/build/robot_interface/build/lib/robot_interface
+copying src/robot_interface/__init__.py -> /home/csi/motion_system/build/robot_interface/build/lib/robot_interface
+copying src/robot_interface/scheduler.py -> /home/csi/motion_system/build/robot_interface/build/lib/robot_interface
+copying src/robot_interface/planner.py -> /home/csi/motion_system/build/robot_interface/build/lib/robot_interface
+copying src/robot_interface/kinematics_solver.py -> /home/csi/motion_system/build/robot_interface/build/lib/robot_interface
+copying src/robot_interface/robot.py -> /home/csi/motion_system/build/robot_interface/build/lib/robot_interface
+running install
+running install_lib
+creating /home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages/robot_interface
+copying /home/csi/motion_system/build/robot_interface/build/lib/robot_interface/__init__.py -> /home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages/robot_interface
+copying /home/csi/motion_system/build/robot_interface/build/lib/robot_interface/scheduler.py -> /home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages/robot_interface
+copying /home/csi/motion_system/build/robot_interface/build/lib/robot_interface/planner.py -> /home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages/robot_interface
+copying /home/csi/motion_system/build/robot_interface/build/lib/robot_interface/kinematics_solver.py -> /home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages/robot_interface
+copying /home/csi/motion_system/build/robot_interface/build/lib/robot_interface/robot.py -> /home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages/robot_interface
+byte-compiling /home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages/robot_interface/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages/robot_interface/scheduler.py to scheduler.cpython-312.pyc
+byte-compiling /home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages/robot_interface/planner.py to planner.cpython-312.pyc
+byte-compiling /home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages/robot_interface/kinematics_solver.py to kinematics_solver.cpython-312.pyc
+byte-compiling /home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages/robot_interface/robot.py to robot.cpython-312.pyc
+running install_data
+creating /home/csi/motion_system/install/robot_interface/share/ament_index
+creating /home/csi/motion_system/install/robot_interface/share/ament_index/resource_index
+creating /home/csi/motion_system/install/robot_interface/share/ament_index/resource_index/packages
+copying resource/robot_interface -> /home/csi/motion_system/install/robot_interface/share/ament_index/resource_index/packages
+copying package.xml -> /home/csi/motion_system/install/robot_interface/share/robot_interface
+running install_egg_info
+Copying ../../../../build/robot_interface/robot_interface.egg-info to /home/csi/motion_system/install/robot_interface/lib/python3.12/site-packages/robot_interface-0.1.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/csi/motion_system/build/robot_interface/install.log'
