@@ -153,8 +153,8 @@ class MotionSystemWidget(QMainWindow):
         self._select_motor_button.setMenu(menu)
 
     def _initialize_widget(self):
-        q_tab_widget = self.findChild(QTabWidget, 'TabWidget')
-        if q_tab_widget is None:
+        self.q_tab_widget = self.findChild(QTabWidget, 'TabWidget')
+        if self.q_tab_widget is None:
             return
 
         style = self.style()
@@ -231,7 +231,7 @@ class MotionSystemWidget(QMainWindow):
         first_tab_layout.addWidget(status_monitor)
         first_tab_layout.addWidget(command_console)
 
-        q_tab_widget.addTab(first_tab, "Motion System")
+        self.q_tab_widget.addTab(first_tab, "Motion System")
 
     def _initialize_motor_status_msg(self):
         n_slaves = self._master_infos[0]['number_of_slaves']
