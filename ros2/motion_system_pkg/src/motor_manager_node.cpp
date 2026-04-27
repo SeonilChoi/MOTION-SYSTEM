@@ -25,7 +25,7 @@ MotorManagerNode::MotorManagerNode(const rclcpp::NodeOptions& options)
     );
 
     motor_status_publisher_ = this->create_publisher<MotorStatus>(
-        "motor_state", rclcpp::QoS(1).best_effort()
+        "motor_status", rclcpp::QoS(1).best_effort()
     );
 
     motor_status_timer_ = this->create_wall_timer(

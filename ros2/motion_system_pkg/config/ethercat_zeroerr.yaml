@@ -18,8 +18,8 @@ drivers:
     pulse_per_revolution: 524288
     rated_torque: 52.0
     unit_torque: 0.1
-    lower: -100.0
-    upper: 100.0
+    lower: -3.0
+    upper: 3.0
     speed: 2000
     acceleration: 1.0
     deceleration: 1.0
