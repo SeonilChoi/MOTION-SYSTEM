@@ -1,4 +1,3 @@
-from itertools import cycle
 import os
 import math
 import yaml
@@ -95,6 +94,7 @@ class MotionSystemWidget(QMainWindow):
 
         self._initialize_widget()
 
+
     def _load_motor_infos(self):
         if not self._config_file:
             self._node.get_logger().warning('config_file parameter is empty.')
@@ -137,22 +137,9 @@ class MotionSystemWidget(QMainWindow):
                     'profile_mode': slave.get('profile_mode'),
                     'driver_id': driver_id,
                     'alias': slave.get('alias'),
-                    'position': slave.get('position'),
-                    'vendor_id': slave.get('vendor_id'),
-                    'product_id': slave.get('product_id'),
-                    'type': driver_info.get('type'),
-                    'pulse_per_revolution': driver_info.get('pulse_per_revolution'),
-                    'rated_torque': driver_info.get('rated_torque'),
-                    'unit_torque': driver_info.get('unit_torque'),
                     'lower': driver_info.get('lower'),
                     'upper': driver_info.get('upper'),
                     'speed': driver_info.get('speed'),
-                    'acceleration': driver_info.get('acceleration'),
-                    'deceleration': driver_info.get('deceleration'),
-                    'profile_velocity': driver_info.get('profile_velocity'),
-                    'profile_acceleration': driver_info.get('profile_acceleration'),
-                    'profile_deceleration': driver_info.get('profile_deceleration'),
-                    'param_file': driver_info.get('param_file'),
                 })
 
         return master_infos, motor_infos
@@ -188,17 +175,11 @@ class MotionSystemWidget(QMainWindow):
         visible_button.setChecked(False)
         visible_button.clicked.connect(self._on_visible_button_clicked)
 
-        self._pos_plot_widget = pg.PlotWidget(title="Motor infos")
-        #self._vel_plot_widget = pg.PlotWidget(title="Velocity")
-        #self._tau_plot_widget = pg.PlotWidget(title="Torque")
-        self._pos_plot_widget.setBackground('w')
-        #self._vel_plot_widget.setBackground('w')
-       # self._tau_plot_widget.setBackground('w')
+        self._motor_infos_plot_widget = pg.PlotWidget(title="Motor infos")
+        self._motor_infos_plot_widget.setBackground('w')
 
         status_monitor_layout.addWidget(visible_button, 0, Qt.AlignRight)
-        status_monitor_layout.addWidget(self._pos_plot_widget)
-        #status_monitor_layout.addWidget(self._vel_plot_widget)
-        #status_monitor_layout.addWidget(self._tau_plot_widget)
+        status_monitor_layout.addWidget(self._motor_infos_plot_widget)
 
         command_console = QGroupBox("Command Console", first_tab)
         command_console_layout = QVBoxLayout(command_console)
@@ -252,6 +233,27 @@ class MotionSystemWidget(QMainWindow):
 
         q_tab_widget.addTab(first_tab, "Motion System")
 
+    def _initialize_motor_status_msg(self):
+        n_slaves = self._master_infos[0]['number_of_slaves']
+        msg = MotorStatus()
+        msg.number_of_target_interfaces = [0] * n_slaves
+        msg.target_interface_id = [Int8MultiArray(data=[0] * n_slaves) for _ in range(n_slaves)]
+        msg.controller_index = [0] * n_slaves
+        msg.controlword = [0] * n_slaves
+        msg.statusword = [0] * n_slaves
+        msg.errorcode = [0] * n_slaves
+        msg.position = [0.0] * n_slaves
+        msg.velocity = [0.0] * n_slaves
+        msg.torque = [0.0] * n_slaves
+        return msg, n_slaves
+
+    def _set_current_value_label(self, profile_mode, value):
+        if profile_mode == 0:
+            if value < 0:
+                self._cur_val_label.setText(f"Current Value:  -{int(-value // 100)}.{int(-value % 100)}")
+            else:
+                self._cur_val_label.setText(f"Current Value:  {int(value // 100)}.{int(value % 100)}")
+
 
     def _on_reset_button_clicked(self):
         self._current_controller_index = None
@@ -269,53 +271,24 @@ class MotionSystemWidget(QMainWindow):
         if self._current_controller_index is None:
             return
 
-        n_slaves = self._master_infos[0]['number_of_slaves']
-
-        msg = MotorStatus()
-        msg.number_of_target_interfaces = [0] * n_slaves
-        msg.target_interface_id = [Int8MultiArray(data=[0] * n_slaves) for _ in range(n_slaves)]
-        msg.controller_index = [0] * n_slaves
-        msg.controlword = [0] * n_slaves
-        msg.statusword = [0] * n_slaves
-        msg.errorcode = [0] * n_slaves
-        msg.position = [0.0] * n_slaves
-        msg.velocity = [0.0] * n_slaves
-        msg.torque = [0.0] * n_slaves
-
-        for idx in range(n_slaves):
-            msg.controller_index[idx] = idx
-            
-            if idx == self._current_controller_index:
-                if self._motor_infos[idx]['profile_mode'] == 0:
-                    msg.number_of_target_interfaces[idx] = 2
-                    msg.target_interface_id[idx] = Int8MultiArray(data=[0, 1])
-                    
-                    if self._motor_infos[idx]['driver_id'] == 0:
-                        msg.controlword[idx] = int(CW_NEW_SET_POINT_ZEROERR)
-                    elif self._motor_infos[idx]['driver_id'] == 1:
-                        msg.controlword[idx] = int(CW_NEW_SET_POINT_MINAS)
-
-                    msg.position[idx] = value / 100.0 * DEG_2_RAD
-
-                    if value < 0:
-                        value = -value
-                        self._cur_val_label.setText(f"Current Value:  -{int(value // 100)}.{int(value % 100)}")
-                    else:
-                        self._cur_val_label.setText(f"Current Value:  {int(value // 100)}.{int(value % 100)}")
-
-                elif self._motor_infos[idx]['profile_mode'] == 1:
-                    msg.number_of_target_interfaces[idx] = 1
-                    msg.target_interface_id[idx] = Int8MultiArray(data=[2])
-                    
-                    msg.velocity[idx] = value * RPM_2_RAD
-
-                    if value < 0:
-                        value = -value
-                        self._cur_val_label.setText(f"Current Value:  -{int(value)}")
-                    else:
-                        self._cur_val_label.setText(f"Current Value:  {int(value)}")
-                    
+        msg, n_slaves = self._initialize_motor_status_msg()
+        
+        motor_info = self._motor_infos[self._current_controller_index]
+        if motor_info['profile_mode'] == 0:
+            msg.number_of_target_interfaces[self._current_controller_index] = 2
+            msg.target_interface_id[self._current_controller_index] = Int8MultiArray(data=[0, 1])
+            if motor_info['driver_id'] == 0:
+                msg.controlword[self._current_controller_index] = int(CW_NEW_SET_POINT_ZEROERR)
+            elif motor_info['driver_id'] == 1:
+                msg.controlword[self._current_controller_index] = int(CW_NEW_SET_POINT_MINAS)
+            msg.position[self._current_controller_index] = value / 100.0 * DEG_2_RAD
+        elif motor_info['profile_mode'] == 1:
+            msg.number_of_target_interfaces[self._current_controller_index] = 1
+            msg.target_interface_id[self._current_controller_index] = Int8MultiArray(data=[2])
+            msg.velocity[self._current_controller_index] = value * RPM_2_RAD
         self._motor_command_publisher.publish(msg)
+
+        self._set_current_value_label(motor_info['profile_mode'], value)
 
     def _on_select_motor_clicked(self, index):
         if self._motor_status is None:
@@ -328,13 +301,7 @@ class MotionSystemWidget(QMainWindow):
         if motor_info["profile_mode"] == 0:
             lower = int(motor_info["lower"] * RAD_2_DEG * 100)
             upper = int(motor_info["upper"] * RAD_2_DEG * 100)
-
             current_value = int(self._motor_status.position[index] * RAD_2_DEG * 100)
-        
-            if current_value < 0:
-                self._cur_val_label.setText(f"Current Value:  -{int(-current_value // 100)}.{int(-current_value % 100)}")
-            else:
-                self._cur_val_label.setText(f"Current Value:  {int(current_value // 100)}.{int(current_value % 100)}")
             self._max_value_label.setText(f"{int(upper // 100)}.{int(upper % 100)}")
 
         elif motor_info["profile_mode"] == 1:
@@ -342,36 +309,20 @@ class MotionSystemWidget(QMainWindow):
             lower = -int(rpm)
             upper = int(rpm)
             current_value = int(self._motor_status.velocity[index] * RAD_2_RPM)
-
-            if current_value < 0:
-                self._cur_val_label.setText(f"Current Value:  -{int(-current_value)}")
-            else:
-                self._cur_val_label.setText(f"Current Value:  {int(current_value)}")
             self._max_value_label.setText(f"{int(upper)}")
             
         self._command_slider.setRange(lower, upper)
         self._command_slider.setValue(current_value)
+        self._set_current_value_label(motor_info['profile_mode'], current_value)
         
     def _on_forward_button_clicked(self):
         if self._motor_status is None:
             return
 
         if self._jog_value != "":
-            n_slaves = self._master_infos[0]['number_of_slaves']
-            msg = MotorStatus()
-            msg.number_of_target_interfaces = [0] * n_slaves
-            msg.target_interface_id = [Int8MultiArray(data=[0] * n_slaves) for _ in range(n_slaves)]
-            msg.controller_index = [0] * n_slaves
-            msg.controlword = [0] * n_slaves
-            msg.statusword = [0] * n_slaves
-            msg.errorcode = [0] * n_slaves
-            msg.position = [0.0] * n_slaves
-            msg.velocity = [0.0] * n_slaves
-            msg.torque = [0.0] * n_slaves
-            
+            msg, n_slaves = self._initialize_motor_status_msg()
             if self._motor_infos[self._current_controller_index]['profile_mode'] == 0:
                 current_position = self._motor_status.position[self._current_controller_index]
-
                 msg.number_of_target_interfaces[self._current_controller_index] = 2
                 msg.target_interface_id[self._current_controller_index] = Int8MultiArray(data=[0, 1])
                 if self._motor_infos[self._current_controller_index]['driver_id'] == 0:
@@ -379,32 +330,19 @@ class MotionSystemWidget(QMainWindow):
                 elif self._motor_infos[self._current_controller_index]['driver_id'] == 1:
                     msg.controlword[self._current_controller_index] = int(CW_NEW_SET_POINT_MINAS)
                 msg.position[self._current_controller_index] = current_position + self._jog_value / 100.0 * DEG_2_RAD 
-
                 upper = self._motor_infos[self._current_controller_index]['upper'] * RAD_2_DEG * 100
                 value = int(current_position * RAD_2_DEG * 100 + self._jog_value)
                 current_value = int(value if value < upper else upper)
-                
-                if current_value < 0:
-                    self._cur_val_label.setText(f"Current Value:  -{int(-current_value // 100)}.{int(-current_value % 100)}")
-                else:
-                    self._cur_val_label.setText(f"Current Value:  {int(current_value // 100)}.{int(current_value % 100)}")
-                self._command_slider.setValue(current_value)
-
             elif self._motor_infos[self._current_controller_index]['profile_mode'] == 1:
                 msg.number_of_target_interfaces[self._current_controller_index] = 1
                 msg.target_interface_id[self._current_controller_index] = Int8MultiArray(data=[2])
                 msg.velocity[self._current_controller_index] = self._jog_value * RPM_2_RAD
-
                 upper = self._motor_infos[self._current_controller_index]['speed']
                 value = self._jog_value
                 current_value = int(value if value < upper else upper)
 
-                if current_value < 0:
-                    self._cur_val_label.setText(f"Current Value:  -{int(-current_value)}")
-                else:
-                    self._cur_val_label.setText(f"Current Value:  {int(current_value)}")
-                self._command_slider.setValue(current_value)
-
+            self._set_current_value_label(motor_info['profile_mode'], current_value)
+            self._command_slider.setValue(current_value)
             self._motor_command_publisher.publish(msg)
 
     def _on_backward_button_clicked(self):
@@ -412,21 +350,9 @@ class MotionSystemWidget(QMainWindow):
             return
 
         if self._jog_value != "":
-            n_slaves = self._master_infos[0]['number_of_slaves']
-            msg = MotorStatus()
-            msg.number_of_target_interfaces = [0] * n_slaves
-            msg.target_interface_id = [Int8MultiArray(data=[0] * n_slaves) for _ in range(n_slaves)]
-            msg.controller_index = [0] * n_slaves
-            msg.controlword = [0] * n_slaves
-            msg.statusword = [0] * n_slaves
-            msg.errorcode = [0] * n_slaves
-            msg.position = [0.0] * n_slaves
-            msg.velocity = [0.0] * n_slaves
-            msg.torque = [0.0] * n_slaves
-            
+            msg, n_slaves = self._initialize_motor_status_msg()
             if self._motor_infos[self._current_controller_index]['profile_mode'] == 0:
                 current_position = self._motor_status.position[self._current_controller_index]
-
                 msg.number_of_target_interfaces[self._current_controller_index] = 2
                 msg.target_interface_id[self._current_controller_index] = Int8MultiArray(data=[0, 1])
                 if self._motor_infos[self._current_controller_index]['driver_id'] == 0:
@@ -434,32 +360,18 @@ class MotionSystemWidget(QMainWindow):
                 elif self._motor_infos[self._current_controller_index]['driver_id'] == 1:
                     msg.controlword[self._current_controller_index] = int(CW_NEW_SET_POINT_MINAS)
                 msg.position[self._current_controller_index] = current_position - self._jog_value / 100.0 * DEG_2_RAD
-
                 lower = self._motor_infos[self._current_controller_index]['lower'] * RAD_2_DEG * 100
                 value = int(current_position * RAD_2_DEG * 100 - self._jog_value)
                 current_value = int(value if value > lower else lower)
-
-                if current_value < 0:
-                    self._cur_val_label.setText(f"Current Value:  -{int(-current_value // 100)}.{int(-current_value % 100)}")
-                else:
-                    self._cur_val_label.setText(f"Current Value:  {int(current_value // 100)}.{int(current_value % 100)}")
-                self._command_slider.setValue(current_value)
-
             elif self._motor_infos[self._current_controller_index]['profile_mode'] == 1:
                 msg.number_of_target_interfaces[self._current_controller_index] = 1
                 msg.target_interface_id[self._current_controller_index] = Int8MultiArray(data=[2])
                 msg.velocity[self._current_controller_index] = -self._jog_value * RPM_2_RAD
-
                 lower = self._motor_infos[self._current_controller_index]['lower']
                 value = self._jog_value
                 current_value = int(value if value > lower else lower)
-
-                if current_value < 0:
-                    self._cur_val_label.setText(f"Current Value:  -{int(-current_value)}")
-                else:
-                    self._cur_val_label.setText(f"Current Value:  {int(current_value)}")
-                self._command_slider.setValue(current_value)
-
+            self._set_current_value_label(motor_info['profile_mode'], current_value)
+            self._command_slider.setValue(current_value)
             self._motor_command_publisher.publish(msg)
     
     def _on_update_timer(self):
@@ -476,34 +388,19 @@ class MotionSystemWidget(QMainWindow):
             return
 
         if (len(self._positions) == 50):
-            self._pos_plot_widget.clear()
-            #self._vel_plot_widget.clear()
-            #self._tau_plot_widget.clear()
+            self._motor_infos_plot_widget.clear()
+            self._motor_infos_plot_widget.addLegend(offset=(10, 10))
 
-            self._pos_plot_widget.addLegend(offset=(10, 10))
-            #self._vel_plot_widget.addLegend(offset=(10, 10))
-            #self._tau_plot_widget.addLegend(offset=(10, 10))
-
-            #self._pos_plot_widget.setLabel('left', 'Position')
-            #self._vel_plot_widget.setLabel('left', 'Velocity')
-            #self._tau_plot_widget.setLabel('left', 'Torque')
-
-            colors = cycle(['b', 'g', 'r'])
             motor_info = self._motor_infos[self._current_controller_index]
             idx = motor_info["controller_index"]
             pos = [raw[idx] for raw in self._positions]
             vel = [raw[idx] for raw in self._velocities]
             tau = [raw[idx] for raw in self._torques]
 
-            color = next(colors)
             pen = pg.mkPen(color=color, width=3)
-            self._pos_plot_widget.plot(pos, pen=pen, name=f'{motor_info["alias"]}_position')
-            color = next(colors)
-            pen = pg.mkPen(color=color, width=3)
-            self._pos_plot_widget.plot(vel, pen=pen, name=f'{motor_info["alias"]}_velocity')
-            color = next(colors)
-            pen = pg.mkPen(color=color, width=3)
-            self._pos_plot_widget.plot(tau, pen=pen, name=f'{motor_info["alias"]}_torque')
+            self._motor_infos_plot_widget.plot(pos, pen=pg.mkPen(color='b', width=3), name=f'{motor_info["alias"]}_position')
+            self._motor_infos_plot_widget.plot(vel, pen=pg.mkPen(color='g', width=3), name=f'{motor_info["alias"]}_velocity')
+            self._motor_infos_plot_widget.plot(tau, pen=pg.mkPen(color='r', width=3), name=f'{motor_info["alias"]}_torque')
 
     def motor_status_callback(self, msg):
         self._motor_status = msg
