@@ -1,4 +1,0 @@
-/home/csi/motion_system/ros2/motion_system_pkg/src/motor_manager_node.cpp: In member function ‘void MotorManagerNode::user_command_callback(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)’:
-/home/csi/motion_system/ros2/motion_system_pkg/src/motor_manager_node.cpp:92:69: warning: unused parameter ‘msg’ [-Wunused-parameter]
-   92 | void MotorManagerNode::user_command_callback(const Empty::SharedPtr msg)
-      |                                              ~~~~~~~~~~~~~~~~~~~~~~~^~~

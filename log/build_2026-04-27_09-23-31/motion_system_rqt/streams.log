@@ -1,9 +1,0 @@
-[0.113s] Invoking command in '/home/csi/motion_system/build/motion_system_rqt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csi/motion_system/build/motion_system_rqt -- -j24 -l24
-[0.147s] Built target ament_cmake_python_copy_motion_system_rqt
-[0.254s] running egg_info
-[0.263s] writing motion_system_rqt.egg-info/PKG-INFO
-[0.263s] writing dependency_links to motion_system_rqt.egg-info/dependency_links.txt
-[0.263s] writing top-level names to motion_system_rqt.egg-info/top_level.txt
-[0.287s] reading manifest file 'motion_system_rqt.egg-info/SOURCES.txt'
-[0.288s] writing manifest file 'motion_system_rqt.egg-info/SOURCES.txt'
-[0.303s] Built target ament_cmake_python_build_motion_system_rqt_egg
